@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Helping Hand 👋</title>
+	<meta name="description" content="Helping Hand - The #1 charity token on MVR">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div id="preloader" class="light">
+		<div class="outer">
+			<!-- Google Chrome -->
+			<div class="infinityChrome">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<!-- Safari and others -->
+			<div class="infinity">
+				<div>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+				</div>
+			</div>
+			<!-- Stuff -->
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+		</div>
+	</div>
+
+	<!-- mobile header -->
+	<header class="mobile-header-1 light">
+		<div class="container">
+			<!-- menu icon -->
+			<div class="menu-icon d-inline-flex mr-4">
+				<button>
+					<span></span>
+				</button>
+			</div>
+			<!-- logo image -->
+			<div class="site-logo">
+				<a href="index-light.html">
+					<img src="images/hh-logo-small.png" alt="Helping Hand" />
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- desktop header -->
+	<header class="desktop-header-1 light d-flex align-items-start flex-column">
+
+		<!-- logo image -->
+		<div class="site-logo">
+			<a href="#home">
+				<img src="images/hh-logo-small.png" alt="Helping Hand" />
+			</a>
+		</div>
+
+		<!-- main menu -->
+		<nav>
+			<ul class="vertical-menu scrollspy">
+				<li class="active"><a href="#home"><i class="icon-home"></i>Home</a></li>
+				<li><a href="#tokenomics"><i class="icon-pie-chart"></i>Tokenomics</a></li>
+				<li><a href="#roadmap"><i class="icon-direction"></i>Roadmap</a></li>
+				<li><a href="#charity"><i class="icon-emotsmile"></i>Charity</a></li>
+			</ul>
+		</nav>
+
+		<!-- site footer -->
+		<div class="footer">
+			<!-- copyright text -->
+			<span class="copyright">© 2021 Helping Hand</span>
+		</div>
+
+	</header>
+
+	<!-- main layout -->
+	<main class="content">
+
+		<!-- section home -->
+		<section id="home" class="home d-flex light align-items-center">
+			<div class="container">
+
+				<!-- intro -->
+				<div class="intro">
+					<!-- avatar image -->
+					<img src="images/hh-logo.png" alt="Helping Hand" class="mb-4" />
+
+					<!-- info -->
+					<h1 class="mb-2 mt-0">Helping Hand</h1>
+					<span>The #1 <span class="text-rotating"> Charity token on the MVR chain, MVR token to support
+							kids</span>
+
+						<!-- social icons -->
+						<ul class="social-icons light list-inline mb-0 mt-4">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-telegram"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+
+						<!-- buttons -->
+						<div class="mt-4">
+							<a href="https://swap.moonfarm.in/#/swap?outputCurrency=0x" target="_blank"
+								class="btn btn-default"> Buy on <img
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAABkCAYAAAB+UVSPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGVGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTA4LTI4VDEwOjU5OjI4KzAyOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA4LTI4VDEwOjU5OjI4KzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wOC0yOFQxMDo1OToyOCswMjowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplOWQyMDY2Mi05OGU5LWJlNDktYWQyOS02OTg4NDZkMzljZDciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxN2YwOTlhOC1mYzFhLTUyNDMtOTY4Yi1mN2QwZjc0NThlMDQiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZTMyODAwNi04ZDQ4LTc0NGItYWUyMi1jMTdhNmNmZjAwYzMiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoxZTMyODAwNi04ZDQ4LTc0NGItYWUyMi1jMTdhNmNmZjAwYzMiIHN0RXZ0OndoZW49IjIwMjEtMDgtMjhUMTA6NTk6MjgrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4wIChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZTlkMjA2NjItOThlOS1iZTQ5LWFkMjktNjk4ODQ2ZDM5Y2Q3IiBzdEV2dDp3aGVuPSIyMDIxLTA4LTI4VDEwOjU5OjI4KzAyOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDxwaG90b3Nob3A6VGV4dExheWVycz4gPHJkZjpCYWc+IDxyZGY6bGkgcGhvdG9zaG9wOkxheWVyTmFtZT0iTU9PTnN3YXAiIHBob3Rvc2hvcDpMYXllclRleHQ9Ik1PT05zd2FwIi8+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6VGV4dExheWVycz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7p/wlJAAAUuklEQVR4nO3dabQlVXnG8f/L2AKCoA1SgANREQcUW0UlakvAhaIEiYYkDgyKiAJGGjUUoICxWKgMCgoKuEBFjSgEDYsAMjiADTggHYygDcZoybhkaqam+82HOnYuzb2nzz21d+2qOs9vrf7S9563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"
+									alt="Buy on" style="height: 16px; margin-right: 10px;">
+							</a>
+							<a href="https://charts.freeriver.exchange/" target="_blank" class="btn btn-default"> Chart
+								<img src="images/freeriver.png" alt="Chart" style="height: 24px; margin-right: 4px;">
+							</a>
+						</div>
+				</div>
+
+				<!-- scroll down mouse wheel -->
+				<div class="scroll-down light">
+					<a href="#about" class="mouse-wrapper">
+						<span>Scroll Down</span>
+						<span class="mouse">
+							<span class="wheel"></span>
+						</span>
+					</a>
+				</div>
+
+				<!-- parallax layers -->
+				<div class="parallax" data-relative-input="true">
+
+					<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
+							fill="#FFD15C" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3"
+							fill="none" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
+							fill="#44D7B6" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+							fill="#FFD15C" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+							fill="#6C6CE5" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#FF4C60" fill-rule="evenodd">
+							<path
+								d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
+							<path
+								d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z" />
+						</g>
+					</svg>
+
+					<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3"
+							fill="none" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5"
+							fill="#6C6CE5" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
+							fill="#6C6CE5" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#44D7B6" fill-rule="evenodd">
+							<path
+								d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
+							<path
+								d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
+						</g>
+					</svg>
+
+					<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
+							fill="#FFD15C" fill-rule="evenodd" />
+					</svg>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- section about -->
+		<section id="tokenomics">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Tokenomics</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="text-center text-md-left">
+							<!-- avatar image -->
+							<!--<img src="images/tax.png" width="150" alt="Helping Hand" /> -->
+							<p>
+							<h3>10% tax <br>on buy and sell </h3> to support the charity and help this initiative grow!
+							</p>
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+					</div>
+
+					<div class="col-md-9 triangle-left-md triangle-top-sm">
+						<div class="rounded bg-white shadow-dark padding-30">
+							<div class="row">
+								<div class="col-md-6">
+									<!-- skill item -->
+									<div class="skill-item">
+										<div class="skill-info clearfix">
+											<h4 class="float-left mb-3 mt-0">Charity</h4>
+											<span class="float-right">5%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar data-background" role="progressbar"
+												aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+												data-color="#6C6CE5">
+											</div>
+										</div>
+										<div class="spacer" data-height="20"></div>
+									</div>
+
+									<!-- skill item -->
+									<div class="skill-item">
+										<div class="skill-info clearfix">
+											<h4 class="float-left mb-3 mt-0">Liquidity</h4>
+											<span class="float-right">2%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar data-background" role="progressbar"
+												aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"
+												data-color="#FF4C60">
+											</div>
+										</div>
+										<div class="spacer" data-height="20"></div>
+									</div>
+
+									<!-- skill item -->
+									<div class="skill-item">
+										<div class="skill-info clearfix">
+											<h4 class="float-left mb-3 mt-0">Marketing</h4>
+											<span class="float-right">3%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar data-background" role="progressbar"
+												aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"
+												data-color="#FFD15C">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- section roadmap -->
+		<section id="roadmap">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Roadmap</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row">
+
+					<div class="col-md-6">
+
+						<!-- timeline wrapper -->
+						<div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">September 2021</span>
+									<h3 class="title">Token launch on Moonswap DEX</h3>
+									<p>Succesfull token launch and build an active community</p>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+								<div class="content">
+									<span class="time">September 2021 - Infinite</span>
+									<h3 class="title">Weekly charity donations via voting by the community</h3>
+									<p></p>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+								<div class="content">
+									<span class="time">Oktober 2021 - November 2021</span>
+									<h3 class="title">Expansion</h3>
+									<p>Grow the community and marketcap via marketing campaigns</p>
+								</div>
+							</div>
+
+							<!-- main line -->
+							<span class="line"></span>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- responsive spacer -->
+						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+
+						<!-- timeline wrapper -->
+						<div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">December 2021</span>
+									<h3 class="title">NFT auctions</h3>
+									<p>NFT auctions for charity on existings platforms</p>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+								<div class="content">
+									<span class="time">Q1 2022</span>
+									<h3 class="title">NFT marketplace</h3>
+									<p>Own NFT marketplace with auctions for charity</p>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+								<div class="content">
+									<span class="time">Q2 2022</span>
+									<h3 class="title">TBD</h3>
+									<p>...</p>
+								</div>
+							</div>
+
+							<!-- main line -->
+							<span class="line"></span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- section charity -->
+		<section id="charity">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Charity</h2>
+				<p>The community will decide a weekly charity, by voting via our telegram channel.
+					<br>We will donate in crypto currencies via the Binance Charity Foundation <a
+						href="https://www.binance.charity" target="_blank"><svg width="94" height="24"
+							viewBox="0 0 94 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M33.8476 11.981H29.4286V2.68572H33.7524C35.6571 2.68572 36.8191 3.63809 36.8191 5.08571V5.10476C36.8191 6.15238 36.2666 6.74286 35.6 7.10476C36.6666 7.52381 37.3333 8.13333 37.3333 9.39048V9.40952C37.3333 11.1429 35.9619 11.981 33.8476 11.981ZM34.781 5.44762C34.781 4.8381 34.3048 4.49524 33.4476 4.49524H31.4286V6.45714H33.3143C34.2095 6.45714 34.781 6.17143 34.781 5.46667V5.44762ZM35.2952 9.16191C35.2952 8.53333 34.8381 8.15238 33.7905 8.15238H31.4286V10.1905H33.8667C34.7619 10.1905 35.3143 9.86667 35.3143 9.18095V9.16191H35.2952ZM39.581 11.981V2.68572H41.619V11.981H39.581ZM50.8762 11.981L46.381 6.07619V11.981H44.3619V2.68572H46.2476L50.6095 8.41905V2.68572H52.6286V11.981H50.8762ZM61.8095 11.981L60.9524 9.90476H57.0286L56.1714 11.981H54.0952L58.0762 2.60952H59.9619L63.9428 11.981H61.8095ZM58.9905 5.08571L57.7524 8.09524H60.2286L58.9905 5.08571ZM71.9619 11.981L67.4667 6.07619V11.981H65.4476V2.68572H67.3333L71.6952 8.41905V2.68572H73.7143V11.981H71.9619ZM80.4381 12.1524C77.6953 12.1524 75.6762 10.0381 75.6762 7.37143V7.35238C75.6762 4.70476 77.6762 2.55238 80.5333 2.55238C82.2857 2.55238 83.3333 3.14286 84.1905 3.98095L82.8952 5.48571C82.1714 4.8381 81.4476 4.4381 80.5143 4.4381C78.9524 4.4381 77.8095 5.73333 77.8095 7.33333V7.35238C77.8095 8.95238 78.9143 10.2667 80.5143 10.2667C81.5809 10.2667 82.2286 9.84762 82.9524 9.18095L84.2476 10.4952C83.2952 11.5048 82.2476 12.1524 80.4381 12.1524ZM85.9048 11.981V2.68572H92.9143V4.51429H87.9428V6.4H92.3238V8.22857H87.9428V10.1905H92.9905V12.019H85.9048V11.981ZM51.6571 21.3905C49.7333 21.3905 48.3048 19.9048 48.3048 18C48.3048 16.1143 49.7143 14.5905 51.6952 14.5905C52.9143 14.5905 53.6381 15.0095 54.2666 15.619L53.5238 16.4762C52.9905 15.981 52.4381 15.6571 51.6762 15.6571C50.4191 15.6571 49.5047 16.6857 49.5047 17.981C49.5047 19.2762 50.4191 20.3238 51.6762 20.3238C52.4762 20.3238 53.0095 20 53.5619 19.4667L54.3048 20.2095C53.6381 20.9333 52.8952 21.3905 51.6571 21.3905ZM56.9905 18.5143V21.2952H55.8286V14.7048H56.9905V17.4476H60.1333V14.7048H61.2952V21.2952H60.1333V18.5143H56.9905ZM69.5619 21.2762H68.3429L67.6762 19.6952H64.5714L63.8857 21.2762H62.7048L65.6 14.6476H66.6667L69.5619 21.2762ZM66.1143 16.0381L64.9905 18.6667H67.2572L66.1143 16.0381ZM75.2 21.2762L73.581 18.9905H72.1333V21.2762H70.9715V14.6857H73.9048C75.4095 14.6857 76.3429 15.4857 76.3429 16.781C76.3429 17.8667 75.6953 18.5333 74.781 18.781L76.5524 21.2762H75.2ZM73.8095 15.7524H72.1333V17.9619H73.8286C74.6476 17.9619 75.1809 17.5238 75.1809 16.8571C75.1809 16.1333 74.6667 15.7524 73.8095 15.7524ZM79.3333 14.7048V21.2952H78.1714V14.7048H79.3333ZM84.0572 21.2762H82.8952V15.7714H80.8V14.7048H86.1333V15.7714H84.0381V21.2762H84.0572ZM91.0476 21.2762H89.8857V18.6857L87.2762 14.7048H88.6476L90.4953 17.619L92.3619 14.7048H93.6952L91.0857 18.6667V21.2762H91.0476ZM45.2 17.4476H29.4286V18.5524H45.2V17.4476ZM2.70475 9.27619L0 11.981L2.70475 14.6857L5.40951 11.981L2.70475 9.27619ZM12 5.40952L16.6476 10.0571L19.3524 7.35238L12 0L4.6476 7.35238L7.3524 10.0571L12 5.40952ZM21.2952 9.27619L18.5905 11.981L21.2952 14.6857L24 11.981L21.2952 9.27619ZM12 18.5714L7.3524 13.9238L4.6476 16.6286L12 24L19.3524 16.6476L16.6476 13.9429L12 18.5714ZM12 14.7048L14.7048 12L12 9.29524L9.29525 12L12 14.7048Z"
+								fill="#F0B90B"></path>
+						</svg>
+					</a>
+				</p>
+
+				<div class="spacer" data-height="60"></div>
+
+				<!-- portfolio filter (desktop) -->
+				<ul class="portfolio-filter list-inline wow fadeInUp">
+					<li class="current list-inline-item" data-filter="*">Everything</li>
+					<li class="list-inline-item" data-filter=".children">Children</li>
+					<li class="list-inline-item" data-filter=".covid">Covid</li>
+					<li class="list-inline-item" data-filter=".other">Other</li>
+				</ul>
+
+				<!-- portfolio filter (mobile) -->
+				<div class="pf-filter-wrapper">
+					<select class="portfolio-filter-mobile">
+						<option value="*">Everything</option>
+						<option value=".children">Children</option>
+						<option value=".covid">Covid</option>
+						<option value=".other">Other</option>
+					</select>
+				</div>
+
+				<!-- portolio wrapper -->
+				<div class="row portfolio-wrapper">
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item children">
+						<a href="https://www.binance.charity/binance-lunch-for-children" target="_blank">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Children</span>
+									<h4 class="title">Binance Lunch for Children - General</h4>
+									<span class="more-button"><i class="icon-link"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="https://resource.binance.charity/images/c17257a18598472180f3dca0f6990323_5.jpg"
+										alt="Binance Lunch for Children - General" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item children">
+						<a href="https://www.binance.charity/donate-textbooks" target="_blank">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Children</span>
+									<h4 class="title">Binance Lunch for Children - Textbooks</h4>
+									<span class="more-button"><i class="icon-link"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="https://resource.binance.charity/images/52b6013efb4d446c8bd2bcabb20c5215_aaron-burden-236415-unsplash.jpg"
+										alt="Binance Lunch for Children - Textbooks" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item covid">
+						<a href="https://www.binance.charity/crypto-against-covid" target="_blank">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Covid</span>
+									<h4 class="title">Crypto Against COVID</h4>
+									<span class="more-button"><i class="icon-link"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="https://resource.binance.charity/images/a5ded15f1fae4b47b55264374adc845a_WechatIMG701.jpeg"
+										alt="Crypto Against COVID" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item other">
+						<a href="https://www.binance.charity/fight-hunger-worldwide" target="_blank">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Other</span>
+									<h4 class="title">Fight Hunger Worldwide</h4>
+									<span class="more-button"><i class="icon-link"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="https://resource.binance.charity/images/1e26204cf0fa4998b1f583da5fa9cc28_photo_2021-06-16%2011.50.49.jpeg"
+										alt="Fight Hunger Worldwide" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item other">
+						<a href="https://www.binance.charity/Protect-Our-Planet" target="_blank">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Other</span>
+									<h4 class="title">Protect Our Planet</h4>
+									<span class="more-button"><i class="icon-link"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="https://resource.binance.charity/images/3009a132ce894fabaa0d10d58bf851da_shutterstock_187234814.jpeg"
+										alt="Protect Our Planet" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item other">
+						<a href="https://www.binance.charity/binance-charity-wallet" target="_blank">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Other</span>
+									<h4 class="title">Binance Charity Wallet</h4>
+									<span class="more-button"><i class="icon-link"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="https://resource.binance.charity/images/7ea9f095a21e4b47bb2f435a47316afa_charity.jpg"
+										alt="Binance Charity Wallet" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<div class="spacer" data-height="96"></div>
+
+	</main>
+
+	<!-- Go to top button -->
+	<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+	<!-- SCRIPTS -->
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/infinite-scroll.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/validator.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/morphext.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
